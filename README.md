@@ -53,3 +53,8 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 Build it by [Jose Julian Mosquera Fuli](https://github.com/JoseJulianMosqueraFuli).
+
+##### Commands
+
+/_ Command python manage.py dumpdata courses --indent=2 --output=courses/fixtures/data.json _/
+/_ Command python manage.py loaddata data.json _/
