@@ -19,19 +19,19 @@ We're starting a new Django project to develop an E-Learning Platform.
 2. Navigate into the repository:
 
    ```bash
-   cd ecommerce
+   cd elearning
    ```
 
 3. Create a new virtual environment
 
    ```bash
-   python -m venv venv/ecommerce
+   python -m venv venv/elearning
    ```
 
 4. Activate the virtual environment:
 
    ```bash
-   source venv/ecommerce/bin/activate
+   source venv/elearning/bin/activate
    ```
 
 5. Run the project:
