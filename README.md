@@ -1,4 +1,4 @@
-# E-Learning Platform README
+# LearningWave Platform
 
 This repository is part of a guide on creating an E-Learning Platform using Django.
 
@@ -12,9 +12,9 @@ We're starting a new Django project to develop an E-Learning Platform.
 
 1. Clone this repository:
 
-```bash
- git clone https://github.com/your-username/elearning.git
-```
+   ```bash
+   git clone https://github.com/your-username/elearning.git
+   ```
 
 2. Navigate into the repository:
 
@@ -54,7 +54,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 Build it by [Jose Julian Mosquera Fuli](https://github.com/JoseJulianMosqueraFuli).
 
-##### Commands
+###### Commands
 
-/_ Command python manage.py dumpdata courses --indent=2 --output=courses/fixtures/data.json _/
-/_ Command python manage.py loaddata data.json _/
+###### /_ Command python manage.py dumpdata courses --indent=2 --output=courses/fixtures/data.json _/
+
+###### /_ Command python manage.py loaddata data.json _/
