@@ -7,6 +7,7 @@ from django.shortcuts import redirect, get_object_or_404
 from django.views.generic.base import TemplateResponseMixin, View
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.detail import DetailView
 from django.urls import reverse_lazy
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 
@@ -178,3 +179,8 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response(
             {"subjects": subjects, "subject": subject, "courses": courses}
         )
+
+
+class CourseDetailView(DetailView):
+    model = Course
+    template_name = "courses/course/detail.html"
