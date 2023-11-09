@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from .fields import OrderField
+from django.template.loader import render_to_string
 
 
 class Subject(models.Model):
@@ -79,6 +80,12 @@ class ItemBase(models.Model):
 
     def __str__(self):
         return self.title
+
+    def render(self):
+        return render_to_string(
+            f"courses/content/{self._meta.model}.html",
+            {"item": self},
+        )
 
 
 class Text(ItemBase):
