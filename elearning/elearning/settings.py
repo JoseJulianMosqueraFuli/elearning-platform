@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "embed_video",
     "debug_toolbar",
     "redisboard",
-    "rest-framework",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
