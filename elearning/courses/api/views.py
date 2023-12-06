@@ -32,7 +32,7 @@ class CourseEnrollView(APIView):
         return Response({"enrolled": True})
 
 
-class CourseViewSet(viewsets.ReadOnlyViewSet):
+class CourseViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
 
