@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "redisboard",
     "rest_framework",
     "chat",
+    "channels",
 ]
 
 MIDDLEWARE = [
